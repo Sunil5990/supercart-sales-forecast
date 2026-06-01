@@ -29,4 +29,8 @@ jobs:
 
       - name: Check model file exists
         run: |
+          test -f src/superkart_pipeline.pkl
+
+      - name: Check model file exists
+        run: |
           ls src/
