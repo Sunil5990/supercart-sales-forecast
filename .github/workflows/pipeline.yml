@@ -25,12 +25,8 @@ jobs:
 
       - name: Verify Streamlit app
         run: |
-          python -m py_compile src/streamlit_app.py
+          python -m py_compile Src/streamlit_app.py
 
       - name: Check model file exists
         run: |
-          test -f src/superkart_pipeline.pkl
-
-      - name: Check model file exists
-        run: |
-          ls src/
+          test -f Src/superkart_pipeline.pkl
